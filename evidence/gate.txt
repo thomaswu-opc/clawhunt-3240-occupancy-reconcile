@@ -1,0 +1,27 @@
+$ python.exe -m pytest -v --no-header -p no:cacheprovider
+# 2026-11-25T18:34:44  exit=0
+
+============================= test session starts =============================
+collecting ... collected 11 items
+
+tests/test_acceptance.py::AC1BoundaryCases::test_ac1_maintenance_reduces_available PASSED [  9%]
+tests/test_acceptance.py::AC1BoundaryCases::test_ac1_mid_month_end PASSED [ 18%]
+tests/test_acceptance.py::AC1BoundaryCases::test_ac1_mid_month_start PASSED [ 27%]
+tests/test_acceptance.py::AC1BoundaryCases::test_ac1_month_end_and_totals PASSED [ 36%]
+tests/test_acceptance.py::AC1BoundaryCases::test_ac1_renewal_is_seamless PASSED [ 45%]
+tests/test_acceptance.py::AC1BoundaryCases::test_ac1_shared_space_counts_seats PASSED [ 54%]
+tests/test_acceptance.py::AC2ReconcileDetail::test_ac2_detects_manufactured_diff_with_detail PASSED [ 63%]
+tests/test_acceptance.py::AC2ReconcileDetail::test_ac2_identical_values_report_nothing PASSED [ 72%]
+tests/test_acceptance.py::AC2ReconcileDetail::test_ac2_threshold_boundary_not_reported PASSED [ 81%]
+tests/test_acceptance.py::AC2ReconcileDetail::test_ac2_writes_log_line PASSED [ 90%]
+tests/test_acceptance.py::AC3RunbookHasSchedule::test_ac3_readme_documents_cron PASSED [100%]
+
+============================= 11 passed in 0.04s ==============================
+
+## AC 覆盖
+
+AC-1   simulatable      PASS
+AC-2   simulatable      PASS
+AC-3   doc_verifiable   PASS
+
+GATE: PASS
